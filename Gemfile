@@ -1,8 +1,8 @@
 #encoding: utf-8
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '1.9.3'
 gem 'rails', '3.2.16'
-gem 'mysql2'
+gem 'pg'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'

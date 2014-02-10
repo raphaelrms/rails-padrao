@@ -11,4 +11,4 @@
 ADMIN_NAME: admin
 ADMIN_EMAIL: admin@admin.com
 ADMIN_PASSWORD: 91827364
-ROLES: [Admin,Visitante]
+ROLES: [admin,visitante]

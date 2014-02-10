@@ -19,11 +19,11 @@ class Permission < ActiveRecord::Base
   end
 
   def titlecasear_classe
-    self.subject_class = self.subject_class.mb_chars.titlecase.to_s
+    self.subject_class = self.subject_class.mb_chars.titlecase.to_s if self.subject_class != "all"
   end
 
   def acoes_possiveis
-      if !['create','new', 'show' ,'read','index','update','destroy'].include? self.action
+      if !['create','manage','new', 'show' ,'read','index','update','destroy'].include? self.action
       errors.add(:action,"só pode ser: create, new, read, index, update, destroy")
       return false
     end

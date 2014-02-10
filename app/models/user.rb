@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :role_id
 
   def grupo_padrao
-    self.roles  << Role.where(:name => "Visitante").first if !self.roles.any?
+    self.roles  << Role.where(:name => Role::VISITANTE).first if !self.roles.any?
   end
 
 

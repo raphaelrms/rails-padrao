@@ -13,8 +13,8 @@ class Role < ActiveRecord::Base
 
   scopify
 
-  VISITANTE = "Visitante"
-  ADMIN = "Admin"
+  VISITANTE = "visitante"
+  ADMIN = "admin"
 
   attr_accessible :name
   scope :sem_redundancias, lambda {binding.pry}
