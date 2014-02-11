@@ -10,14 +10,14 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
-adapter: postgresql
+  adapter: postgresql
   encoding: utf8
-  reconnect: false
-  database: d652bk0vir512k
+  reconnect: true
+  database: Projeto1_development
   pool: 5
-  username: rsabbolktpzicw
-  host: ec2-54-197-241-95.compute-1.amazonaws.com
-  password: fOKRkrdLKPS_xJOrYRDLsTaDY-
+  username: postgres
+  password: tzzk7662
+  socket: /var/run/postgresql
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -35,8 +35,8 @@ production:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: d652bk0vir512k
+  database: dduh6dvl90kd1e
+  host: ec2-54-197-241-79.compute-1.amazonaws.com
   pool: 5
-  username: rsabbolktpzicw
-  host: ec2-54-197-241-95.compute-1.amazonaws.com
-  password: fOKRkrdLKPS_xJOrYRDLsTaDY-
+  port: 5432
+  username: nhzpxummacuuug
