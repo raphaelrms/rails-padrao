@@ -52,7 +52,7 @@
       <div class="form-group">
         <%= f.label :current_password, "Senha atual*:",:class => "col-xs-6 col-sm-3 col-md-2 control-label" %>
         <div class="col-sm-2 col-md-3">
-          <%= f.password_field :current_password,:class => "form-control", "data-validate" => "validate(required,minlength(8))"%>
+          <%= f.password_field :current_password,:class => "form-control", "data-validate" => "validate(required,minlength(8)) on(submit)"%>
           <p class="help-block" style="font-size: 11px;">Digite sua senha atual para confirmar as alteracões.</p>
         </div>
 

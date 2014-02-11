@@ -28,6 +28,10 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
+
+group :production do
+  gem 'passenger'
+end
 group :test do
   gem 'capybara'
   gem 'cucumber-rails', :require=>false
