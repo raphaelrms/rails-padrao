@@ -35,7 +35,8 @@ production:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: Projeto1_production
+  database: d652bk0vir512k
   pool: 5
-  username: postgres
-  password: tzzk7662
+  username: rsabbolktpzicw
+  host: ec2-54-197-241-95.compute-1.amazonaws.com
+  password: fOKRkrdLKPS_xJOrYRDLsTaDY-
